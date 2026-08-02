@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover trusted local businesses and services throughout KwaMashu.">
+    <meta name="theme-color" content="#1F2937">
+    <title>Business Directory &mdash; KwaMashu Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#111827',
+                        charcoal: '#1F2937',
+                        gold: '#C89B3C',
+                        canvas: '#FAFAF8'
+                    },
+                    fontFamily: {
+                        display: ['Poppins', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/directory.css">
+</head>
+<body class="directory-page bg-canvas font-sans text-ink antialiased">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="index.html#home" aria-label="KwaMashu Online home">
+                <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="brand-name">KwaMashu<span>Online</span></span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="index.html#home">Home</a>
+                <a class="is-active" href="directory.html" aria-current="page">Directory</a>
+                <a href="index.html#events">Events</a>
+                <a href="index.html#opportunities">Opportunities</a>
+                <a href="/shop">Shop</a>
+                <a href="index.html#advertise">Advertise</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a class="search-button" href="#directory-search" aria-label="Search the KwaMashu business directory">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="5.8"></circle><path d="m15.2 15.2 4.2 4.2"></path></svg>
+                </a>
+                <a class="nav-cta" href="index.html#advertise">List your business <span class="nav-arrow" aria-hidden="true">&nearr;</span></a>
+                <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
+                    <span class="sr-only">Open navigation menu</span>
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <a href="index.html#home">Home</a>
+            <a class="is-active" href="directory.html" aria-current="page">Directory</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#opportunities">Opportunities</a>
+            <a href="/shop">Shop</a>
+            <a href="index.html#advertise">Advertise</a>
+            <a href="#contact">Contact</a>
+            <a class="mobile-cta" href="index.html#advertise">List your business <span class="nav-arrow" aria-hidden="true">&nearr;</span></a>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="directory-hero" aria-labelledby="directory-title">
+            <div class="directory-hero-inner">
+                <h1 id="directory-title">Directory</h1>
+                <p>Discover trusted local businesses and services throughout KwaMashu.</p>
+            </div>
+        </section>
+
+        <section class="directory-search-section" id="directory-search" aria-labelledby="search-title">
+            <div class="directory-search-inner">
+                <h2 id="search-title" class="sr-only">Search the directory</h2>
+                <form class="directory-search-form" id="directory-search-form" role="search">
+                    <label class="sr-only" for="business-search">Search businesses, services or keywords</label>
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="5.8"></circle><path d="m15.2 15.2 4.2 4.2"></path></svg>
+                    <input id="business-search" type="search" placeholder="Search businesses, services or keywords..." autocomplete="off">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="directory-categories" aria-labelledby="categories-title">
+            <div class="directory-content-width">
+                <div class="directory-section-heading reveal-on-scroll">
+                    <div>
+                        <p class="section-kicker"><span></span> Explore the directory</p>
+                        <h2 id="categories-title">Browse by category.</h2>
+                    </div>
+                    <p>From everyday essentials to specialist services, find the people and places that keep KwaMashu moving.</p>
+                </div>
+
+                <div class="category-grid" aria-label="Business categories">
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Restaurants & Food" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3v8M5 3v5a3 3 0 0 0 6 0V3M8 11v10M16 3v18M16 3c2.2 1 3 3.1 3 5.2V11h-6V8.2C13 6.1 13.8 4 16 3Z"></path></svg></span><span>Restaurants &amp; Food</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Beauty & Hair" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4c4.8 0 8.7 3.6 9.2 8.3L18.5 19a2 2 0 0 1-2.8 2.8l-7.4-7.4C3.6 13.8 0 9.8 0 5c0-.6.4-1 1-1 1.9 0 3.5.4 5 1.2M7 10l7 7M15.5 5.5l3 3"></path></svg></span><span>Beauty &amp; Hair</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Healthcare" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-8-4.9-8-11a4.4 4.4 0 0 1 8-2.6A4.4 4.4 0 0 1 20 10c0 6.1-8 11-8 11Z"></path><path d="M12 9v5M9.5 11.5h5"></path></svg></span><span>Healthcare</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Automotive" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 11 1.6-4.3A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.7L19 11v7H5v-7Z"></path><path d="M3 11h18M7.5 15h.1M16.4 15h.1M7 18v2M17 18v2"></path></svg></span><span>Automotive</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Education" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5Z"></path><path d="M7 11v4.2c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8V11M21 9v5"></path></svg></span><span>Education</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Shopping" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8ZM9 9V6a3 3 0 0 1 6 0v3"></path></svg></span><span>Shopping</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Professional Services" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"></rect><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M4 12h16M10 12v2h4v-2"></path></svg></span><span>Professional Services</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Construction" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m14 4 6 6M10 8l6 6M4 20l7-7 4 4-7 7H4v-4Z"></path></svg></span><span>Construction</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Home Services" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 11 9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9Z"></path></svg></span><span>Home Services</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Entertainment" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13M9 8l11-2"></path><circle cx="5" cy="18" r="3"></circle><circle cx="16" cy="16" r="3"></circle></svg></span><span>Entertainment</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Churches" aria-pressed="false"><span class="category-icon" aria-hidden="true"><path d="M12 3v6M9 6h6M5 21V11l7-5 7 5v10M3 21h18M9 21v-5h6v5"></path></span><span>Churches</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Accommodation" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V5h16v15M2 20h20M7 9h2M7 13h2M15 9h2M15 13h2"></path></svg></span><span>Accommodation</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="directory-listings" id="businesses" aria-labelledby="businesses-title">
+            <div class="directory-content-width">
+                <div class="directory-listings-heading reveal-on-scroll">
+                    <div>
+                        <p class="section-kicker"><span></span> Local discovery</p>
+                        <h2 id="businesses-title">Businesses in KwaMashu.</h2>
+                    </div>
+                    <p id="directory-results-count" role="status" aria-live="polite"></p>
+                </div>
+
+                <div class="directory-filter-bar reveal-on-scroll" aria-label="Directory filters">
+                    <div class="filter-block filter-sections">
+                        <span class="filter-label">KwaMashu area</span>
+                        <div class="area-filter" role="group" aria-label="Filter by KwaMashu area">
+                            <button class="is-active" type="button" data-section="All" aria-pressed="true">All</button>
+                            <button type="button" data-section="A" aria-pressed="false">A</button><button type="button" data-section="B" aria-pressed="false">B</button><button type="button" data-section="C" aria-pressed="false">C</button><button type="button" data-section="D" aria-pressed="false">D</button><button type="button" data-section="E" aria-pressed="false">E</button><button type="button" data-section="F" aria-pressed="false">F</button><button type="button" data-section="G" aria-pressed="false">G</button><button type="button" data-section="H" aria-pressed="false">H</button><button type="button" data-section="J" aria-pressed="false">J</button><button type="button" data-section="K" aria-pressed="false">K</button>
+                        </div>
+                    </div>
+                    <div class="filter-block filter-sort">
+                        <label class="filter-label" for="sort-businesses">Sort by</label>
+                        <select id="sort-businesses">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="alphabetical">Alphabetical</option>
+                            <option value="rated">Highest rated</option>
+                        </select>
+                    </div>
+                    <label class="open-now-toggle">
+                        <input id="open-now" type="checkbox">
+                        <span class="toggle-track" aria-hidden="true"><span></span></span>
+                        <span>Open now</span>
+                    </label>
+                </div>
+
+                <div class="directory-business-grid" id="directory-business-grid"></div>
+                <p class="directory-empty" id="directory-empty" hidden>No businesses match those filters yet. Try adjusting your search or area.</p>
+                <div class="load-more-wrap"><button class="load-more-button" id="load-more" type="button">Load more <span aria-hidden="true">&darr;</span></button></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand-column">
+                    <a class="brand" href="index.html#home" aria-label="KwaMashu Online home">
+                        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+                        <span class="brand-name">KwaMashu<span>Online</span></span>
+                    </a>
+                    <p>KwaMashu&rsquo;s digital home for local businesses, opportunities and community life.</p>
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="https://www.facebook.com/662699020264892?ref=embed_page" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 8H17V4.4c-.4-.1-1.6-.2-3-.2-3 0-5 1.8-5 5.2V12H5.7v4.1H9V22h4.1v-5.9h3.2l.5-4.1h-3.7V9.8c0-1.2.3-1.8 1.4-1.8Z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"></rect><circle cx="12" cy="12" r="3.7"></circle><circle cx="17.4" cy="6.8" r=".8" class="social-dot"></circle></svg>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12c0 2.6-.3 4.3-.6 5.2a2.7 2.7 0 0 1-1.7 1.7c-1 .3-3 .6-6.7.6s-5.7-.3-6.7-.6a2.7 2.7 0 0 1-1.7-1.7C3.3 16.3 3 14.6 3 12s.3-4.3.6-5.2a2.7 2.7 0 0 1 1.7-1.7c1-.3 3-.6 6.7-.6s5.7.3 6.7.6a2.7 2.7 0 0 1 1.7 1.7c.3.9.6 2.6.6 5.2Z"></path><path d="m10 8.7 5 3.3-5 3.3V8.7Z" class="social-play"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer-links" aria-labelledby="quick-links-title">
+                    <h2 id="quick-links-title">Quick links</h2>
+                    <a href="index.html#home">Home</a><a href="directory.html">Directory</a><a href="index.html#events">Events</a><a href="index.html#opportunities">Opportunities</a><a href="/shop">Shop</a><a href="index.html#advertise">Advertise</a><a href="#contact">Contact</a>
+                </nav>
+
+                <nav class="footer-links" aria-labelledby="community-links-title">
+                    <h2 id="community-links-title">Community</h2>
+                    <a href="index.html#advertise">List your business</a><a href="/events/submit">Submit an event</a><a href="index.html#advertise">Advertising</a><a href="/support">Support</a><a href="/faq">FAQ</a>
+                </nav>
+
+                <address class="footer-contact">
+                    <h2>Contact</h2>
+                    <a href="mailto:info@kwamashu.online">info@kwamashu.online</a>
+                    <a href="tel:+27310000000">+27 (0)31 000 0000</a>
+                    <p>KwaMashu, Durban<br>KwaZulu-Natal, South Africa</p>
+                    <p>Mon&ndash;Fri, 08:00&ndash;17:00</p>
+                </address>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 KwaMashu Online. All rights reserved.</p><p>Built with <span aria-label="love">&hearts;</span> for the KwaMashu community.</p></div>
+        </div>
+    </footer>
+
+    <noscript>
+        <style>@media (max-width: 980px) { .menu-button { display: none !important; } .mobile-nav[hidden] { display: flex !important; flex-direction: column; } }</style>
+    </noscript>
+    <script src="js/app.js"></script>
+    <script src="js/directory.js"></script>
+</body>
+</html>
