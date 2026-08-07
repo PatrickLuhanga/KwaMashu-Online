@@ -43,6 +43,7 @@
 
             <nav class="desktop-nav" aria-label="Primary navigation">
                 <a href="index.html#home">Home</a>
+                <a href="discover.html">Discover KwaMashu</a>
                 <a class="is-active" href="directory.html" aria-current="page">Directory</a>
                 <a href="index.html#events">Events</a>
                 <a href="index.html#opportunities">Opportunities</a>
@@ -65,6 +66,7 @@
 
         <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
             <a href="index.html#home">Home</a>
+            <a href="discover.html">Discover KwaMashu</a>
             <a class="is-active" href="directory.html" aria-current="page">Directory</a>
             <a href="index.html#events">Events</a>
             <a href="index.html#opportunities">Opportunities</a>
@@ -77,9 +79,13 @@
 
     <main id="main-content" tabindex="-1">
         <section class="directory-hero" aria-labelledby="directory-title">
+            <div class="directory-hero-bg">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1920&q=80" alt="" loading="lazy">
+                <div class="overlay"></div>
+            </div>
             <div class="directory-hero-inner">
-                <h1 id="directory-title">Directory</h1>
-                <p>Discover trusted local businesses and services throughout KwaMashu.</p>
+                <h1 id="directory-title">Find trusted businesses across KwaMashu</h1>
+                <p>Browse local shops, restaurants, professionals and essential services across every section of KwaMashu.</p>
             </div>
         </section>
 
@@ -92,6 +98,16 @@
                     <input id="business-search" type="search" placeholder="Search businesses, services or keywords..." autocomplete="off">
                     <button type="submit">Search</button>
                 </form>
+                <div class="popular-searches" aria-label="Popular searches">
+                    <span class="popular-label">Popular Searches:</span>
+                    <button type="button" class="search-pill">Restaurant</button>
+                    <button type="button" class="search-pill">Salon</button>
+                    <button type="button" class="search-pill">Mechanic</button>
+                    <button type="button" class="search-pill">Pharmacy</button>
+                    <button type="button" class="search-pill">Supermarket</button>
+                    <button type="button" class="search-pill">Doctor</button>
+                    <button type="button" class="search-pill">Takeaway</button>
+                </div>
             </div>
         </section>
 
@@ -106,18 +122,17 @@
                 </div>
 
                 <div class="category-grid" aria-label="Business categories">
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Restaurants & Food" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3v8M5 3v5a3 3 0 0 0 6 0V3M8 11v10M16 3v18M16 3c2.2 1 3 3.1 3 5.2V11h-6V8.2C13 6.1 13.8 4 16 3Z"></path></svg></span><span>Restaurants &amp; Food</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Beauty & Hair" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4c4.8 0 8.7 3.6 9.2 8.3L18.5 19a2 2 0 0 1-2.8 2.8l-7.4-7.4C3.6 13.8 0 9.8 0 5c0-.6.4-1 1-1 1.9 0 3.5.4 5 1.2M7 10l7 7M15.5 5.5l3 3"></path></svg></span><span>Beauty &amp; Hair</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Healthcare" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-8-4.9-8-11a4.4 4.4 0 0 1 8-2.6A4.4 4.4 0 0 1 20 10c0 6.1-8 11-8 11Z"></path><path d="M12 9v5M9.5 11.5h5"></path></svg></span><span>Healthcare</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Automotive" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 11 1.6-4.3A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.7L19 11v7H5v-7Z"></path><path d="M3 11h18M7.5 15h.1M16.4 15h.1M7 18v2M17 18v2"></path></svg></span><span>Automotive</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Education" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5Z"></path><path d="M7 11v4.2c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8V11M21 9v5"></path></svg></span><span>Education</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Shopping" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8ZM9 9V6a3 3 0 0 1 6 0v3"></path></svg></span><span>Shopping</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Professional Services" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"></rect><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M4 12h16M10 12v2h4v-2"></path></svg></span><span>Professional Services</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Construction" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m14 4 6 6M10 8l6 6M4 20l7-7 4 4-7 7H4v-4Z"></path></svg></span><span>Construction</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Home Services" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 11 9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9Z"></path></svg></span><span>Home Services</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Entertainment" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13M9 8l11-2"></path><circle cx="5" cy="18" r="3"></circle><circle cx="16" cy="16" r="3"></circle></svg></span><span>Entertainment</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Churches" aria-pressed="false"><span class="category-icon" aria-hidden="true"><path d="M12 3v6M9 6h6M5 21V11l7-5 7 5v10M3 21h18M9 21v-5h6v5"></path></span><span>Churches</span></button>
-                    <button class="category-card reveal-on-scroll" type="button" data-category="Accommodation" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V5h16v15M2 20h20M7 9h2M7 13h2M15 9h2M15 13h2"></path></svg></span><span>Accommodation</span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Food & Dining" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3v8M5 3v5a3 3 0 0 0 6 0V3M8 11v10M16 3v18M16 3c2.2 1 3 3.1 3 5.2V11h-6V8.2C13 6.1 13.8 4 16 3Z"></path></svg></span><span class="category-text"><span class="category-name">Food &amp; Dining</span><span class="category-count">12 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Beauty & Wellness" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4c4.8 0 8.7 3.6 9.2 8.3L18.5 19a2 2 0 0 1-2.8 2.8l-7.4-7.4C3.6 13.8 0 9.8 0 5c0-.6.4-1 1-1 1.9 0 3.5.4 5 1.2M7 10l7 7M15.5 5.5l3 3"></path></svg></span><span class="category-text"><span class="category-name">Beauty &amp; Wellness</span><span class="category-count">8 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Healthcare" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-8-4.9-8-11a4.4 4.4 0 0 1 8-2.6A4.4 4.4 0 0 1 20 10c0 6.1-8 11-8 11Z"></path><path d="M12 9v5M9.5 11.5h5"></path></svg></span><span class="category-text"><span class="category-name">Healthcare</span><span class="category-count">5 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Shopping & Retail" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8ZM9 9V6a3 3 0 0 1 6 0v3"></path></svg></span><span class="category-text"><span class="category-name">Shopping &amp; Retail</span><span class="category-count">15 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Professional Services" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"></rect><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M4 12h16M10 12v2h4v-2"></path></svg></span><span class="category-text"><span class="category-name">Professional Services</span><span class="category-count">7 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Home & Trade Services" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 11 9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9Z"></path></svg></span><span class="category-text"><span class="category-name">Home &amp; Trade Services</span><span class="category-count">9 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Automotive & Transport" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 11 1.6-4.3A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.7L19 11v7H5v-7Z"></path><path d="M3 11h18M7.5 15h.1M16.4 15h.1M7 18v2M17 18v2"></path></svg></span><span class="category-text"><span class="category-name">Automotive &amp; Transport</span><span class="category-count">11 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Education" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5Z"></path><path d="M7 11v4.2c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8V11M21 9v5"></path></svg></span><span class="category-text"><span class="category-name">Education</span><span class="category-count">6 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Entertainment & Leisure" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13M9 8l11-2"></path><circle cx="5" cy="18" r="3"></circle><circle cx="16" cy="16" r="3"></circle></svg></span><span class="category-text"><span class="category-name">Entertainment &amp; Leisure</span><span class="category-count">4 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Accommodation" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V5h16v15M2 20h20M7 9h2M7 13h2M15 9h2M15 13h2"></path></svg></span><span class="category-text"><span class="category-name">Accommodation</span><span class="category-count">3 businesses</span></span></button>
+                    <button class="category-card reveal-on-scroll" type="button" data-category="Places of Worship" aria-pressed="false"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v6M9 6h6M5 21V11l7-5 7 5v10M3 21h18M9 21v-5h6v5"></path></svg></span><span class="category-text"><span class="category-name">Places of Worship</span><span class="category-count">14 businesses</span></span></button>
                 </div>
             </div>
         </section>
@@ -133,27 +148,10 @@
                 </div>
 
                 <div class="directory-filter-bar reveal-on-scroll" aria-label="Directory filters">
-                    <div class="filter-block filter-sections">
-                        <span class="filter-label">KwaMashu area</span>
-                        <div class="area-filter" role="group" aria-label="Filter by KwaMashu area">
-                            <button class="is-active" type="button" data-section="All" aria-pressed="true">All</button>
-                            <button type="button" data-section="A" aria-pressed="false">A</button><button type="button" data-section="B" aria-pressed="false">B</button><button type="button" data-section="C" aria-pressed="false">C</button><button type="button" data-section="D" aria-pressed="false">D</button><button type="button" data-section="E" aria-pressed="false">E</button><button type="button" data-section="F" aria-pressed="false">F</button><button type="button" data-section="G" aria-pressed="false">G</button><button type="button" data-section="H" aria-pressed="false">H</button><button type="button" data-section="J" aria-pressed="false">J</button><button type="button" data-section="K" aria-pressed="false">K</button>
-                        </div>
-                    </div>
-                    <div class="filter-block filter-sort">
-                        <label class="filter-label" for="sort-businesses">Sort by</label>
-                        <select id="sort-businesses">
-                            <option value="featured">Featured</option>
-                            <option value="newest">Newest</option>
-                            <option value="alphabetical">Alphabetical</option>
-                            <option value="rated">Highest rated</option>
-                        </select>
-                    </div>
-                    <label class="open-now-toggle">
-                        <input id="open-now" type="checkbox">
-                        <span class="toggle-track" aria-hidden="true"><span></span></span>
-                        <span>Open now</span>
-                    </label>
+                    <button type="button" class="filter-trigger" id="open-filters" aria-haspopup="dialog" aria-expanded="false">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M7 12h10M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Filters <span id="active-filter-count" class="filter-count" hidden>0</span>
+                    </button>
                 </div>
 
                 <div class="directory-business-grid" id="directory-business-grid"></div>
@@ -162,6 +160,115 @@
             </div>
         </section>
     </main>
+
+    <dialog id="filter-modal" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Filters</h2>
+                <button type="button" class="modal-close" id="close-filters" aria-label="Close filters">
+                    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="filter-group">
+                    <h3>Status</h3>
+                    <div class="status-filters">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="filter-status" value="open">
+                            <span class="checkbox-box"></span>
+                            Open Now
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="filter-status" value="closed">
+                            <span class="checkbox-box"></span>
+                            Closed
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Features</h3>
+                    <div class="status-filters">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="filter-features" value="featured">
+                            <span class="checkbox-box"></span>
+                            Featured
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="filter-features" value="verified">
+                            <span class="checkbox-box"></span>
+                            Verified
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="filter-features" value="delivery">
+                            <span class="checkbox-box"></span>
+                            Delivery Available
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>KwaMashu Section</h3>
+                    <div class="section-grid">
+                        <label class="section-pill"><input type="radio" name="filter-section" value="All" checked><span>All</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="A"><span>A</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="B"><span>B</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="C"><span>C</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="D"><span>D</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="E"><span>E</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="F"><span>F</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="G"><span>G</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="H"><span>H</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="J"><span>J</span></label>
+                        <label class="section-pill"><input type="radio" name="filter-section" value="K"><span>K</span></label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <select id="modal-category" class="modal-select">
+                        <option value="All">All Categories</option>
+                        <option value="Food & Dining">Food & Dining</option>
+                        <option value="Beauty & Wellness">Beauty & Wellness</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Shopping & Retail">Shopping & Retail</option>
+                        <option value="Professional Services">Professional Services</option>
+                        <option value="Home & Trade Services">Home & Trade Services</option>
+                        <option value="Automotive & Transport">Automotive & Transport</option>
+                        <option value="Education">Education</option>
+                        <option value="Entertainment & Leisure">Entertainment & Leisure</option>
+                        <option value="Accommodation">Accommodation</option>
+                        <option value="Places of Worship">Places of Worship</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-reset" id="reset-filters">Reset Filters</button>
+                <button type="button" class="btn-apply" id="apply-filters">Apply Filters</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="directions-modal" class="modal-dialog small-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Directions</h2>
+                <button type="button" class="modal-close" id="close-directions" aria-label="Close directions">
+                    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="directions-address-text" class="directions-address"></p>
+                <div class="directions-actions">
+                    <a href="#" id="open-maps-link" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Open in Google Maps
+                    </a>
+                    <button type="button" id="copy-address-btn" class="btn-secondary">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        Copy Address
+                    </button>
+                </div>
+            </div>
+        </div>
+    </dialog>
 
     <footer class="site-footer" id="contact">
         <div class="footer-inner">
@@ -187,7 +294,7 @@
 
                 <nav class="footer-links" aria-labelledby="quick-links-title">
                     <h2 id="quick-links-title">Quick links</h2>
-                    <a href="index.html#home">Home</a><a href="directory.html">Directory</a><a href="index.html#events">Events</a><a href="index.html#opportunities">Opportunities</a><a href="/shop">Shop</a><a href="index.html#advertise">Advertise</a><a href="#contact">Contact</a>
+                    <a href="index.html#home">Home</a><a href="discover.html">Discover KwaMashu</a><a href="directory.html">Directory</a><a href="index.html#events">Events</a><a href="index.html#opportunities">Opportunities</a><a href="/shop">Shop</a><a href="index.html#advertise">Advertise</a><a href="#contact">Contact</a>
                 </nav>
 
                 <nav class="footer-links" aria-labelledby="community-links-title">
